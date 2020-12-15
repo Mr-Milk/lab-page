@@ -1,24 +1,23 @@
 <script>
-    import { url } from '@roxi/routify'
+    import { url } from '@roxi/routify';
+    import { Container } from 'svelte-materialify';
 </script>
 
 <style>
-  .huge {
-    font-size: 12rem;
-  }
+
   .e404 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    padding: 50px;
   }
 </style>
 
-<div class="e404">
-  <div class="huge">404</div>
-  <div class="big">Page not found. 
-  <!-- link to the parent folder of _fallback.svelte -->
-  <a href={$url('/')}>Home</a>
+<Container>
+  <div class="e404">
+    <span style="font-size: 40px;">404</span>
+    <p>Page not found.
+      <!-- link to the parent folder of _fallback.svelte -->
+      <a href={$url('/')}>Home</a>
+    </p>
   </div>
-</div>
+</Container>
+

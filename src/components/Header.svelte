@@ -22,6 +22,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
   .title {
+    padding-top: 20px;
     font-family: 'Orbitron', sans-serif;
     font-size: 45px;
   }
@@ -38,6 +39,7 @@
     padding: 12px 14px;
     margin: 16px 5px;
     text-decoration: none;
+    font-size: 20px;
   }
 
   .navbar a:hover {
@@ -60,10 +62,11 @@
     }
 
     .navbar a {
-      padding: 12px;
+      padding: 8px;
       margin: 5px;
       display: block;
       text-align: left;
+      font-size: 14px;
     }
 
     .menu {
@@ -97,7 +100,7 @@
 
   <div class:hide>
   {#each _links as [path, name]}
-    <a class="link" class:active={$isActive(path)} href={$url(path)}>
+    <a class:active={$isActive(path)} href={$url(path)}>
       {name}
     </a>
   {/each}
