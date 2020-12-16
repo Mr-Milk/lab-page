@@ -5,7 +5,6 @@
 </script>
 
 <style global>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway');
 
     body {
         color: #777777;

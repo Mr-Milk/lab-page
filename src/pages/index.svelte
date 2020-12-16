@@ -1,6 +1,9 @@
 <script>
     import {Container, Card, CardText,} from 'svelte-materialify'
-    let home_img = "images/home-transcription.jpg"
+    import Gallery from '../components/Gallery.svelte'
+    let images = [{id: 1, src: "images/home-transcription.jpg", text: "Transcription factor"},
+        {id: 2, src: "images/mokan.jpg", text: "Mokan's marriage!"},
+        {id: 3, src: "images/hulingling.jpg", text: "Graduation of Dr. Hu Lingling!"}]
 </script>
 
 <style>
@@ -32,12 +35,10 @@
 
 </style>
 
-<Container class="align-center" style="text-align: center;">
 
-    <span>
-            <img src={home_img} alt="transcription factor">
-    </span>
 
+<Container class="align-center" style="text-align: center; max-width: 1000px;">
+    <Gallery items={images}/>
     <div class="d-flex justify-center mt-4 mb-4">
     <Card outlined style="max-width:800px;">
         <div class="pl-4 pr-4 pt-3">
